@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>개인정보입력</title>
+</head>
+<body>
+	<form method="get" action="/servlet/ex04">
+	<!--  name속성 통해 파라미터 연걸 -->
+		<label>이름</label> <input type="text" name="name">
+		<label>생년월일</label> <input type="text" name="birthday">
+		
+		<!--  submit 이용하면, 입력한 값을 이용해서 결과 보여줌 ( 페이지 넘어감) -->
+		<!-- 버튼 만드는 방법1 -->
+		<button type="submit">전송</button>
+		<!-- 버튼 만드는 방법2 -->
+		<!-- <input type="submit" value="전송"> -->
+	</form>
+</body>
+</html>
