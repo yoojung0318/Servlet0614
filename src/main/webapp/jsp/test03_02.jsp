@@ -1,17 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.util.Date" %>
-<%@ page import="java.text.SimpleDateFormat" %>
-<!DOCTYPE html>
-<html>
-<head>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>날짜 시간 선택</title>
+<title>Insert title here</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -21,10 +14,18 @@
 <body>
 
 	<div class="container">
-		<h1>날짜 시간 링크</h1>
+		<h1>체격 조건 입력 </h1>
 		
-		<a class="btn btn-info" href="/jsp/test02_1.jsp?what=time">현재시간 확인</a>
-		<a class="btn btn-success" href="/jsp/test02_1.jsp?what=date">오늘 날짜 확인</a>
+		<form method="get" action="/jsp/test03_1.jsp">
+			<div class="d-flex">
+				<input type="text" class="form-control col-4" placeholder="키를 입력하세요" name="height"> cm
+				<input type="text" class="form-control col-4" placeholder="몸무게를 입력하세요" name="weight"> kg
+				<button class="btn btn-info" type="submit">계산</button>
+			</div>
+		
+		</form>
+	
+	
 	</div>
 
 </body>
