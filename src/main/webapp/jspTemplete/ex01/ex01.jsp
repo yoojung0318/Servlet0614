@@ -12,7 +12,6 @@
 	<%@ include file="date.jsp" %>
 	
 	<%-- String dateString = "adsf"; --%>
-	<%= dateString %>
 	
 </body>
 </html>

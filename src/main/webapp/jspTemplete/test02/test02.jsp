@@ -112,7 +112,7 @@
 			<div class="music-List mt-3">
 				<h3>곡 목록</h3>
 				<table class="table table-sm text-center">
-					<thead>
+					<thead>ss
 						<tr>
 							<th>no</th>
 							<th>제목</th>
@@ -123,7 +123,7 @@
 					<% for(Map<String, Object> music : musicList){ %>
 						<tr>
 							<td> <%=music.get("id")%></td>
-							<td><%=music.get("title")%></td>
+							<td><a href="/jspTemplete/test02/test02_02.jsp?id=<%= music.get("id") %>"> <%= music.get("title")%> </a></td>
 							<td><%=music.get("album")%></td>
 						</tr>
 						<%} %>
